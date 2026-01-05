@@ -1,48 +1,48 @@
-function Header({ message }) {
-    const { Container, Row, Col } = ReactBootstrap;
-
-    return (
-        <Container className="my-4">
-            <Row>
-                <Col className="text-center">
-                    <h4>{message}</h4>
-                </Col>
-            </Row>
-        </Container>
-    );
-}
-
-
-
-function App() {
-    const { Container, Row, Col } = ReactBootstrap;
-
-    return (
-//        <>
-            <Header message="Hello World" />
-            <Container>
-                <Row>
-                    <Col md={{ offset: 3, span: 6 }}>
-                        <TodoListCard />
-                    </Col>
-                </Row>
-            </Container>
-        </>
-    );
-}
-
-//function App() {
+//function Header({ message }) {
 //    const { Container, Row, Col } = ReactBootstrap;
+//
 //    return (
-//        <Container>
+//        <Container className="my-4">
 //            <Row>
-//                <Col md={{ offset: 3, span: 6 }}>
-//                    <TodoListCard />
+//                <Col className="text-center">
+//                    <h4>{message}</h4>
 //                </Col>
 //            </Row>
 //        </Container>
 //    );
 //}
+
+
+
+//function App() {
+//    const { Container, Row, Col } = ReactBootstrap;
+//
+//    return (
+//        <>
+//            <Header message="Hello World" />
+//            <Container>
+//                <Row>
+//                    <Col md={{ offset: 3, span: 6 }}>
+//                        <TodoListCard />
+//                    </Col>
+//                </Row>
+//            </Container>
+//        </>
+//    );
+//}
+
+function App() {
+    const { Container, Row, Col } = ReactBootstrap;
+    return (
+        <Container>
+            <Row>
+                <Col md={{ offset: 3, span: 6 }}>
+                    <TodoListCard />
+                </Col>
+            </Row>
+        </Container>
+    );
+}
 
 function TodoListCard() {
     const [items, setItems] = React.useState(null);
