@@ -18,7 +18,7 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
 
     return (
-        <>
+//        <>
             <Header message="Hello World" />
             <Container>
                 <Row>
@@ -30,8 +30,6 @@ function App() {
         </>
     );
 }
-
-
 
 //function App() {
 //    const { Container, Row, Col } = ReactBootstrap;
