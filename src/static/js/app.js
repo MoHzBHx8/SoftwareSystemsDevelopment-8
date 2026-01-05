@@ -1,14 +1,17 @@
-function Header() {
-    const { Navbar, Container } = ReactBootstrap;
+function Header({ message }) {
+    const { Container, Row, Col } = ReactBootstrap;
 
     return (
-        <Navbar bg="dark" variant="dark" className="mb-4">
-            <Container>
-                <Navbar.Brand>Todo App</Navbar.Brand>
-            </Container>
-        </Navbar>
+        <Container className="my-4">
+            <Row>
+                <Col className="text-center">
+                    <h4>{message}</h4>
+                </Col>
+            </Row>
+        </Container>
     );
 }
+
 
 
 function App() {
@@ -16,7 +19,7 @@ function App() {
 
     return (
         <>
-            <Header />
+            <Header message="Hello World" />
             <Container>
                 <Row>
                     <Col md={{ offset: 3, span: 6 }}>
@@ -27,6 +30,7 @@ function App() {
         </>
     );
 }
+
 
 
 //function App() {
