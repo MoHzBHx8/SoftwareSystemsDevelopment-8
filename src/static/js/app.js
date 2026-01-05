@@ -1,19 +1,3 @@
-//function Header({ message }) {
-//    const { Container, Row, Col } = ReactBootstrap;
-//
-//    return (
-//        <Container className="my-4">
-//            <Row>
-//                <Col className="text-center">
-//                    <h4>{message}</h4>
-//                </Col>
-//            </Row>
-//        </Container>
-//    );
-//}
-
-
-
 //function App() {
 //    const { Container, Row, Col } = ReactBootstrap;
 //
@@ -35,9 +19,24 @@ function App() {
     const { Container, Row, Col } = ReactBootstrap;
     return (
         <Container>
+            <Header message="Hello World" />
             <Row>
                 <Col md={{ offset: 3, span: 6 }}>
                     <TodoListCard />
+                </Col>
+            </Row>
+        </Container>
+    );
+}
+
+function Header({ message }) {
+    const { Container, Row, Col } = ReactBootstrap;
+
+    return (
+        <Container className="my-4">
+            <Row>
+                <Col className="text-center">
+                    <h4>{message}</h4>
                 </Col>
             </Row>
         </Container>
